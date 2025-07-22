@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Случайная покупка</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Случайный выбор</h1>
+    <img th:src="@{'/' + ${imageName}}" width="400">
+    <br/><br/>
+    <form method="get" action="/">
+        <button type="submit">Еще раз</button>
+    </form>
+</body>
+</html>
